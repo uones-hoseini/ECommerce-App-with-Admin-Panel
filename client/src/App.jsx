@@ -17,11 +17,8 @@ import ShoppingAccount from "./pages/shopping-view/account"
 import CheckAuth from "./components/common/check-auth"
 import UnAuthPage from "./pages/unauth-page"
 function App() {
-	const isAuthenticated = true
-	const user = {
-		name: "younes",
-		role: "user",
-	}
+	const isAuthenticated = false
+	const user = null
 
 	return (
 		<div className="flex flex-col overflow-hidden bg-white">

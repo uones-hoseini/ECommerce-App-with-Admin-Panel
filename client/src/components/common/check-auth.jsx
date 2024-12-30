@@ -29,17 +29,15 @@ function CheckAuth({ isAuthenticated, user, children }) {
 		user?.role !== "admin" &&
 		location.pathname.includes("/admin")
 	) {
-			return <Navigate to="/anauth-page" />
-
+		return <Navigate to="/unauth-page" />
 	}
 
-  if (
+	if (
 		isAuthenticated &&
 		user?.role === "admin" &&
 		location.pathname.includes("/shop")
 	) {
-			return <Navigate to="/admin/dashboard" />
-
+		return <Navigate to="/admin/dashboard" />
 	}
 
 	return <>{children}</>
