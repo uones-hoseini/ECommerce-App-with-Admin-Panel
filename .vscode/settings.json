@@ -1,0 +1,10 @@
+{
+	"prettier.bracketSameLine": true,
+	"prettier.enableDebugLogs": true,
+	"prettier.printWidth": 60,
+	"prettier.proseWrap": "always",
+	"prettier.singleAttributePerLine": true,
+	"prettier.useTabs": true,
+	"prettier.vueIndentScriptAndStyle": true,
+	"prettier.withNodeModules": true
+}
