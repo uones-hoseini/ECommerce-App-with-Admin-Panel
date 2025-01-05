@@ -10,6 +10,7 @@ const initialState = {
 	email: "",
 	password: "",
 }
+
 function AuthLogin() {
 	const [formData, setFormData] = useState(initialState)
 	const dispatch = useDispatch()
@@ -19,7 +20,7 @@ function AuthLogin() {
 		event.preventDefault()
 
 		dispatch(loginUser(formData)).then((data) => {
-			if (data?.payload?.succes) {
+			if (data?.payload?.success) {
 				toast({
 					title: data?.payload?.message,
 				})
@@ -33,10 +34,10 @@ function AuthLogin() {
 	}
 
 	return (
-		<div className="mx-full w-full max-w-md space-y-6">
+		<div className="mx-auto w-full max-w-md space-y-6">
 			<div className="text-center">
 				<h1 className="text-3xl font-bold tracking-tight text-foreground">
-					sign in to your account
+					Sign in to your account
 				</h1>
 				<p className="mt-2">
 					Don't have an account
